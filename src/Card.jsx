@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
-const Card = ({id , title, onClick}) => {
+const Card = ({id , title, onClick, to}) => {
   return (
+    
     <div 
       className='card' 
       onClick={()=>onClick(id)}
@@ -19,6 +21,7 @@ const Card = ({id , title, onClick}) => {
         Here goes the content of the card
       </p>
     </div>
+    
   )
 }
 
